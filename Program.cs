@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -88,8 +88,11 @@ namespace ConsoleApplication17
 
 
             Console.Clear();
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            string Menu = @"
+            char xoxo = 'Z';
+            while (xoxo != 'Q')
+            {
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                string Menu = @"
                                                         $$\      $$\ $$$$$$$$\ $$\   $$\ $$\   $$\ 
                                                         $$$\    $$$ |$$  _____|$$$\  $$ |$$ |  $$ |
                                                         $$$$\  $$$$ |$$ |      $$$$\ $$ |$$ |  $$ |
@@ -102,12 +105,12 @@ namespace ConsoleApplication17
 
 
 
-            Console.WriteLine(Menu);
-            Console.Write("\n\n                                   Hi, " + name + "! " + "What do u want to do?");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("\n         ----------------------------------------------------------------------------------");
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
-            string basic = @"
+                Console.WriteLine(Menu);
+                Console.Write("\n\n                                   Hi, " + name + "! " + "What do u want to do?");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("\n         ----------------------------------------------------------------------------------");
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                string basic = @"
                                              $$$$$$\           $$$$$$$\   $$$$$$\   $$$$$$\  $$$$$$\  $$$$$$\  
                                             $$  __$$\          $$  __$$\ $$  __$$\ $$  __$$\ \_$$  _|$$  __$$\ 
                                             $$ /  $$ |         $$ |  $$ |$$ /  $$ |$$ /  \__|  $$ |  $$ /  \__|
@@ -117,9 +120,9 @@ namespace ConsoleApplication17
                                             $$ |  $$ |$$\      $$$$$$$  |$$ |  $$ |\$$$$$$  |$$$$$$\ \$$$$$$  |
                                             \__|  \__|\__|     \_______/ \__|  \__| \______/ \______| \______/  
                                           =============================================================================================================================================";
-            Console.WriteLine(basic);
-            Console.ForegroundColor = ConsoleColor.DarkRed;
-            string intermediate = @"
+                Console.WriteLine(basic);
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                string intermediate = @"
                                             $$$$$$$\            $$$$$$\ $$\   $$\ $$$$$$$$\ $$$$$$$$\ $$$$$$$\  $$\      $$\ $$$$$$$$\ $$$$$$$\  $$$$$$\  $$$$$$\  $$$$$$$$\ $$$$$$$$\ 
                                             $$  __$$\           \_$$  _|$$$\  $$ |\__$$  __|$$  _____|$$  __$$\ $$$\    $$$ |$$  _____|$$  __$$\ \_$$  _|$$  __$$\ \__$$  __|$$  _____|
                                             $$ |  $$ |            $$ |  $$$$\ $$ |   $$ |   $$ |      $$ |  $$ |$$$$\  $$$$ |$$ |      $$ |  $$ |  $$ |  $$ /  $$ |   $$ |   $$ |      
@@ -129,9 +132,9 @@ namespace ConsoleApplication17
                                             $$$$$$$  |$$\       $$$$$$\ $$ | \$$ |   $$ |   $$$$$$$$\ $$ |  $$ |$$ | \_/ $$ |$$$$$$$$\ $$$$$$$  |$$$$$$\ $$ |  $$ |   $$ |   $$$$$$$$\ 
                                             \_______/ \__|      \______|\__|  \__|   \__|   \________|\__|  \__|\__|     \__|\________|\_______/ \______|\__|  \__|   \__|   \________| 
                                            ============================================================================================================================================";
-            Console.WriteLine(intermediate);
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
-            string extra = @"
+                Console.WriteLine(intermediate);
+                Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                string extra = @"
                                              $$$$$$\             $$$$$$$$\ $$\   $$\ $$$$$$$$\ $$$$$$$\   $$$$$$\  
                                              $$  __$$\           $$  _____|$$ |  $$ |\__$$  __|$$  __$$\ $$  __$$\ 
                                              $$ /  \__|          $$ |      \$$\ $$  |   $$ |   $$ |  $$ |$$ /  $$ |
@@ -141,18 +144,18 @@ namespace ConsoleApplication17
                                              \$$$$$$  |$$\       $$$$$$$$\ $$ /  $$ |   $$ |   $$ |  $$ |$$ |  $$ |
                                               \______/ \__|      \________|\__|  \__|   \__|   \__|  \__|\__|  \__|   
                                           =============================================================================";
-            Console.WriteLine(extra);
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("\n         ----------------------------------------------------------------------------------");
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.Write("                              Enter a Letter: ");
-            menu = Console.ReadLine();
+                Console.WriteLine(extra);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("\n         ----------------------------------------------------------------------------------");
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.Write("                              Enter a Letter: ");
+                menu = Console.ReadLine();
 
-            if (menu == "a" || menu == "A")
-            {
-                Console.Clear();
-                Console.ForegroundColor = ConsoleColor.Cyan;
-                string options = @"
+                if (menu == "a" || menu == "A")
+                {
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    string options = @"
                                                   $$$$$$$\   $$$$$$\   $$$$$$\  $$$$$$\  $$$$$$\  
                                                   $$  __$$\ $$  __$$\ $$  __$$\ \_$$  _|$$  __$$\ 
                                                   $$ |  $$ |$$ /  $$ |$$ /  \__|  $$ |  $$ /  \__|
@@ -161,11 +164,11 @@ namespace ConsoleApplication17
                                                   $$ |  $$ |$$ |  $$ |$$\   $$ |  $$ |  $$ |  $$\ 
                                                   $$$$$$$  |$$ |  $$ |\$$$$$$  |$$$$$$\ \$$$$$$  |
                                                   \_______/ \__|  \__| \______/ \______| \______/  ";
-                Console.Write(options);
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("\n----------------------------------------------------------------------------------------------------------------");
-                Console.ForegroundColor = ConsoleColor.Red;
-                string average = @"
+                    Console.Write(options);
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("\n----------------------------------------------------------------------------------------------------------------");
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    string average = @"
                                                     /$$$$$$             /$$$$$$  /$$    /$$ /$$$$$$$$ /$$$$$$$   /$$$$$$   /$$$$$$  /$$$$$$$$
                                                    /$$__  $$           /$$__  $$| $$   | $$| $$_____/| $$__  $$ /$$__  $$ /$$__  $$| $$_____/
                                                   | $$  \ $$          | $$  \ $$| $$   | $$| $$      | $$  \ $$| $$  \ $$| $$  \__/| $$      
@@ -174,9 +177,9 @@ namespace ConsoleApplication17
                                                   | $$  | $$          | $$  | $$  \  $$$/  | $$      | $$  \ $$| $$  | $$| $$  \ $$| $$      
                                                   | $$  | $$ /$$      | $$  | $$   \  $/   | $$$$$$$$| $$  | $$| $$  | $$|  $$$$$$/| $$$$$$$$
                                                   |__/  |__/|__/      |__/  |__/    \_/    |________/|__/  |__/|__/  |__/ \______/ |________/";
-                Console.Write(average);
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                string name1 = @"    
+                    Console.Write(average);
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    string name1 = @"    
                                                   /$$$$$$$           /$$   /$$  /$$$$$$  /$$      /$$ /$$$$$$$$
                                                  | $$__  $$         | $$$ | $$ /$$__  $$| $$$    /$$$| $$_____/
                                                  | $$  \ $$         | $$$$| $$| $$  \ $$| $$$$  /$$$$| $$      
@@ -186,9 +189,9 @@ namespace ConsoleApplication17
                                                  | $$$$$$$//$$      | $$ \  $$| $$  | $$| $$ \/  | $$| $$$$$$$$
                                                  |_______/|__/      |__/  \__/|__/  |__/|__/     |__/|________/ ";
 
-                Console.WriteLine(name1);
-                Console.ForegroundColor = ConsoleColor.Gray;
-                string calcu = @"
+                    Console.WriteLine(name1);
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    string calcu = @"
                                                    /$$$$$$            /$$$$$$   /$$$$$$  /$$        /$$$$$$  /$$   /$$ /$$        /$$$$$$  /$$$$$$$$ /$$$$$$  /$$$$$$$ 
                                                   /$$__  $$          /$$__  $$ /$$__  $$| $$       /$$__  $$| $$  | $$| $$       /$$__  $$|__  $$__//$$__  $$| $$__  $$
                                                  | $$  \__/         | $$  \__/| $$  \ $$| $$      | $$  \__/| $$  | $$| $$      | $$  \ $$   | $$  | $$  \ $$| $$  \ $$
@@ -197,9 +200,9 @@ namespace ConsoleApplication17
                                                  | $$    $$         | $$    $$| $$  | $$| $$      | $$    $$| $$  | $$| $$      | $$  | $$   | $$  | $$  | $$| $$  \ $$
                                                  |  $$$$$$//$$      |  $$$$$$/| $$  | $$| $$$$$$$$|  $$$$$$/|  $$$$$$/| $$$$$$$$| $$  | $$   | $$  |  $$$$$$/| $$  | $$
                                                   \______/|__/       \______/ |__/  |__/|________/ \______/  \______/ |________/|__/  |__/   |__/   \______/ |__/  |__/";
-                Console.WriteLine(calcu);
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                string multi = @"
+                    Console.WriteLine(calcu);
+                    Console.ForegroundColor = ConsoleColor.DarkCyan;
+                    string multi = @"
                                                    /$$$$$$$           /$$      /$$ /$$   /$$ /$$    /$$$$$$$$ /$$$$$$ /$$$$$$$  /$$       /$$$$$$  /$$$$$$   /$$$$$$  /$$$$$$$$ /$$$$$$  /$$$$$$  /$$   /$$
                                                   | $$__  $$         | $$$    /$$$| $$  | $$| $$   |__  $$__/|_  $$_/| $$__  $$| $$      |_  $$_/ /$$__  $$ /$$__  $$|__  $$__/|_  $$_/ /$$__  $$| $$$ | $$
                                                   | $$  \ $$         | $$$$  /$$$$| $$  | $$| $$      | $$     | $$  | $$  \ $$| $$        | $$  | $$  \__/| $$  \ $$   | $$     | $$  | $$  \ $$| $$$$| $$
@@ -217,17 +220,17 @@ namespace ConsoleApplication17
                                                                                               | $$  | $$  | $$| $$  \ $$| $$      | $$                                                        
                                                                                               | $$  | $$  | $$| $$$$$$$/| $$$$$$$$| $$$$$$$$                                                  
                                                                                               |__/  |__/  |__/|_______/ |________/|________/ ";
-                Console.WriteLine(multi);
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("\n----------------------------------------------------------------------------------------------------------------");
-                Console.ForegroundColor = ConsoleColor.DarkMagenta;
-                Console.Write("Enter a Letter: ");
-                options = Console.ReadLine();
-                if (options == "a" || options == "A")
-                {
-                    Console.Clear();
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    average = @"                                                             
+                    Console.WriteLine(multi);
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("\n----------------------------------------------------------------------------------------------------------------");
+                    Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                    Console.Write("Enter a Letter: ");
+                    options = Console.ReadLine();
+                    if (options == "a" || options == "A")
+                    {
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        average = @"                                                             
                                                       /$$$$$$  /$$    /$$ /$$$$$$$$ /$$$$$$$   /$$$$$$   /$$$$$$  /$$$$$$$$
                                                      /$$__  $$| $$   | $$| $$_____/| $$__  $$ /$$__  $$ /$$__  $$| $$_____/
                                                     | $$  \ $$| $$   | $$| $$      | $$  \ $$| $$  \ $$| $$  \__/| $$      
@@ -236,22 +239,22 @@ namespace ConsoleApplication17
                                                     | $$  | $$  \  $$$/  | $$      | $$  \ $$| $$  | $$| $$  \ $$| $$      
                                                     | $$  | $$   \  $/   | $$$$$$$$| $$  | $$| $$  | $$|  $$$$$$/| $$$$$$$$
                                                     |__/  |__/    \_/    |________/|__/  |__/|__/  |__/ \______/ |________/ ";
-                    Console.WriteLine(average);
-                    Console.ForegroundColor = ConsoleColor.White;
-                    Console.Write("\nEnter your 1st term grade: ");
-                    a = Convert.ToDouble(Console.ReadLine());
-                    Console.Write("Enter your 2nd term grade: ");
-                    b = Convert.ToDouble(Console.ReadLine());
-                    Console.Write("Enter your 3rd term grade: ");
-                    c = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine(average);
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.Write("\nEnter your 1st term grade: ");
+                        a = Convert.ToDouble(Console.ReadLine());
+                        Console.Write("Enter your 2nd term grade: ");
+                        b = Convert.ToDouble(Console.ReadLine());
+                        Console.Write("Enter your 3rd term grade: ");
+                        c = Convert.ToDouble(Console.ReadLine());
 
-                    ave = (a + b + c) / 3;
+                        ave = (a + b + c) / 3;
 
-                    if (ave <= 3.0)
-                    {
-                        Console.Clear();
-                        Console.ForegroundColor = ConsoleColor.DarkYellow;
-                        string passed = @"
+                        if (ave <= 3.0)
+                        {
+                            Console.Clear();
+                            Console.ForegroundColor = ConsoleColor.DarkYellow;
+                            string passed = @"
                                                      /$$$$$$   /$$$$$$  /$$   /$$  /$$$$$$  /$$$$$$$   /$$$$$$  /$$$$$$$$ /$$$$$$        /$$ /$$           
                                                     /$$__  $$ /$$__  $$| $$$ | $$ /$$__  $$| $$__  $$ /$$__  $$|__  $$__//$$__  $$      | $$| $$           
                                                    | $$  \__/| $$  \ $$| $$$$| $$| $$  \__/| $$  \ $$| $$  \ $$   | $$  | $$  \__/      | $$| $$           
@@ -271,14 +274,14 @@ namespace ConsoleApplication17
                                          | $$   |  $$$$$$/|  $$$$$$/       \  $/   | $$$$$$$$      | $$      | $$  | $$|  $$$$$$/|  $$$$$$/| $$$$$$$$| $$$$$$$/
                                          |__/    \______/  \______/         \_/    |________/      |__/      |__/  |__/ \______/  \______/ |________/|_______/ ";
 
-                        Console.WriteLine(passed);
+                            Console.WriteLine(passed);
 
-                    }
-                    else
-                    {
-                        Console.Clear();
-                        Console.ForegroundColor = ConsoleColor.DarkYellow;
-                        string fail = @"
+                        }
+                        else
+                        {
+                            Console.Clear();
+                            Console.ForegroundColor = ConsoleColor.DarkYellow;
+                            string fail = @"
 
                                                      /$$$$$$   /$$$$$$  /$$$$$$$  /$$$$$$$  /$$     /$$       /$$     /$$ /$$$$$$  /$$   /$$      
                                                     /$$__  $$ /$$__  $$| $$__  $$| $$__  $$|  $$   /$$/      |  $$   /$$//$$__  $$| $$  | $$      
@@ -299,16 +302,16 @@ namespace ConsoleApplication17
                                                        | $$     | $$  | $$  | $$  | $$      | $$      | $$  | $$                                
                                                        | $$     | $$  | $$ /$$$$$$| $$$$$$$$| $$$$$$$$| $$$$$$$/       /$$ /$$                  
                                                        |__/     |__/  |__/|______/|________/|________/|_______/       |__/|__/";
-                        Console.WriteLine(fail);
+                            Console.WriteLine(fail);
+                        }
                     }
-                }
 
-                else if (options == "b" || options == "B")
-                {
+                    else if (options == "b" || options == "B")
+                    {
 
-                    Console.Clear();
-                    Console.ForegroundColor = ConsoleColor.Yellow;
-                    name = @"
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        name = @"
                                                       /$$   /$$  /$$$$$$  /$$      /$$ /$$$$$$$$      
                                                      | $$$ | $$ /$$__  $$| $$$    /$$$| $$_____/      
                                                      | $$$$| $$| $$  \ $$| $$$$  /$$$$| $$            
@@ -318,55 +321,55 @@ namespace ConsoleApplication17
                                                      | $$ \  $$| $$  | $$| $$ \/  | $$| $$$$$$$$      
                                                      |__/  \__/|__/  |__/|__/     |__/|________/ ";
 
-                   
-                        char decision = 'Z'; 
+
+                        char decision = 'Z';
                         while (decision != 'N')
                         {
 
-                        Console.Write(name);
-                        Console.ForegroundColor = ConsoleColor.White;
-                        Console.Write("\nEnter First name: ");
-                        firstname = Console.ReadLine();
-                        Console.Write("Enter Middle Name: ");
-                        middlename = Convert.ToString(Console.ReadLine());
-                        Console.Write("Enter Last Name: ");
-                        lastname = Console.ReadLine();
+                            Console.Write(name);
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.Write("\nEnter First name: ");
+                            firstname = Console.ReadLine();
+                            Console.Write("Enter Middle Name: ");
+                            middlename = Convert.ToString(Console.ReadLine());
+                            Console.Write("Enter Last Name: ");
+                            lastname = Console.ReadLine();
 
-                        Console.Write("\nYour full name is " + lastname + ", " + firstname + " " + (middlename[0]) + ".");
-                        Console.Write("\nYour Middle Initial is {0}.", Char.ToUpper(middlename[0]));
+                            Console.Write("\nYour full name is " + lastname + ", " + firstname + " " + (middlename[0]) + ".");
+                            Console.Write("\nYour Middle Initial is {0}.", Char.ToUpper(middlename[0]));
 
-                        if (Char.ToUpper(middlename[0]) == 'A' || Char.ToUpper(middlename[0]) == 'E' || Char.ToUpper(middlename[0]) == 'I' || Char.ToUpper(middlename[0]) == 'O' || Char.ToUpper(middlename[0]) == 'U')
-                        {
-                            Console.WriteLine("\nThe Letter " + Char.ToUpper(middlename[0]) + " is a vowel");
-                        }
-                        else
-                        {
-                            Console.Write("\nThe Letter " + Char.ToUpper(middlename[0]) + " is a consonant");
-                            Console.Write("\nWould you like to try again? Y/N: ");
-                            decision = Char.ToUpper(Convert.ToChar(Console.ReadLine()));
-                            if (decision == 'Y')
+                            if (Char.ToUpper(middlename[0]) == 'A' || Char.ToUpper(middlename[0]) == 'E' || Char.ToUpper(middlename[0]) == 'I' || Char.ToUpper(middlename[0]) == 'O' || Char.ToUpper(middlename[0]) == 'U')
                             {
-                                Console.WriteLine("Trying Again.");
-                                continue;
-                            }
-                            else if (decision == 'N')
-                            {
-                                decision = 'N';
+                                Console.WriteLine("\nThe Letter " + Char.ToUpper(middlename[0]) + " is a vowel");
                             }
                             else
                             {
-                                Console.WriteLine("Invalid Input");
-                                continue;
+                                Console.Write("\nThe Letter " + Char.ToUpper(middlename[0]) + " is a consonant");
+                                Console.Write("\nWould you like to try again? Y/N: ");
+                                decision = Char.ToUpper(Convert.ToChar(Console.ReadLine()));
+                                if (decision == 'Y')
+                                {
+                                    Console.WriteLine("Trying Again.");
+                                    continue;
+                                }
+                                else if (decision == 'N')
+                                {
+                                    decision = 'N';
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Invalid Input");
+                                    continue;
+                                }
+                                Console.ReadKey();
                             }
-                            Console.ReadKey();
                         }
                     }
-                }
-                else if (options == "c" || options == "C")
-                {
-                    Console.Clear();
-                    Console.ForegroundColor = ConsoleColor.Gray;
-                    calcu = @"
+                    else if (options == "c" || options == "C")
+                    {
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                        calcu = @"
                                                       ______    ______   __         ______   __    __  __         ______   ________  ______   _______  
                                                      /      \  /      \ /  |       /      \ /  |  /  |/  |       /      \ /        |/      \ /       \ 
                                                     /$$$$$$  |/$$$$$$  |$$ |      /$$$$$$  |$$ |  $$ |$$ |      /$$$$$$  |$$$$$$$$//$$$$$$  |$$$$$$$  |
@@ -376,47 +379,47 @@ namespace ConsoleApplication17
                                                     $$ \__/  |$$ |  $$ |$$ |_____ $$ \__/  |$$ \__$$ |$$ |_____ $$ |  $$ |   $$ |  $$ \__$$ |$$ |  $$ |
                                                     $$    $$/ $$ |  $$ |$$       |$$    $$/ $$    $$/ $$       |$$ |  $$ |   $$ |  $$    $$/ $$ |  $$ |
                                                      $$$$$$/  $$/   $$/ $$$$$$$$/  $$$$$$/   $$$$$$/  $$$$$$$$/ $$/   $$/    $$/    $$$$$$/  $$/   $$/ ";
-                    Console.WriteLine(calcu);
-                    Console.ForegroundColor = ConsoleColor.White;
-                    Console.Write("\nEnter First Number: ");
-                    a = Convert.ToInt32(Console.ReadLine());
-                    Console.Write("Enter Second Number: ");
-                    b = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(calcu);
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.Write("\nEnter First Number: ");
+                        a = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("Enter Second Number: ");
+                        b = Convert.ToInt32(Console.ReadLine());
 
-                    Console.Write("\nOperators" + "\n+ - * /" + "\nEnter the Operator: ");
-                    operators = Console.ReadLine();
+                        Console.Write("\nOperators" + "\n+ - * /" + "\nEnter the Operator: ");
+                        operators = Console.ReadLine();
 
-                    if (operators == "+")
-                    {
-                        sum = a + b;
-                        Console.Write(a + " " + operators + " " + b + " = " + sum);
+                        if (operators == "+")
+                        {
+                            sum = a + b;
+                            Console.Write(a + " " + operators + " " + b + " = " + sum);
+                        }
+                        else if (operators == "-")
+                        {
+                            diff = a - b;
+                            Console.Write(a + " " + operators + " " + b + " = " + diff);
+                        }
+                        else if (operators == "*")
+                        {
+                            prod = a * b;
+                            Console.Write(a + " " + operators + " " + b + " = " + prod);
+                        }
+                        else if (operators == "/")
+                        {
+                            quo = a - b;
+                            Console.Write(a + " " + operators + " " + b + " = " + quo);
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("INVALID INPUT");
+                        }
                     }
-                    else if (operators == "-")
+                    else if (options == "d" || options == "D")
                     {
-                        diff = a - b;
-                        Console.Write(a + " " + operators + " " + b + " = " + diff);
-                    }
-                    else if (operators == "*")
-                    {
-                        prod = a * b;
-                        Console.Write(a + " " + operators + " " + b + " = " + prod);
-                    }
-                    else if (operators == "/")
-                    {
-                        quo = a - b;
-                        Console.Write(a + " " + operators + " " + b + " = " + quo);
-                    }
-                    else
-                    {
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("INVALID INPUT");
-                    }
-                }
-                else if (options == "d" || options == "D")
-                {
-                    Console.Clear();
-                    Console.ForegroundColor = ConsoleColor.DarkCyan;
-                    multi = @"
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.DarkCyan;
+                        multi = @"
                                       __       __  __    __  __     ________  ______  _______   __        ______   ______    ______   ________  ______   ______   __    __ 
                                      /  \     /  |/  |  /  |/  |   /        |/      |/       \ /  |      /      | /      \  /      \ /        |/      | /      \ /  \  /  |
                                      $$  \   /$$ |$$ |  $$ |$$ |   $$$$$$$$/ $$$$$$/ $$$$$$$  |$$ |      $$$$$$/ /$$$$$$  |/$$$$$$  |$$$$$$$$/ $$$$$$/ /$$$$$$  |$$  \ $$ |
@@ -436,26 +439,26 @@ namespace ConsoleApplication17
                                                                                    $$ |  $$ |  $$ |$$ |__$$ |$$ |_____ $$ |_____                                      
                                                                                    $$ |  $$ |  $$ |$$    $$/ $$       |$$       |                                     
                                                                                    $$/   $$/   $$/ $$$$$$$/  $$$$$$$$/ $$$$$$$$/ ";
-                    Console.WriteLine(multi);
-                    Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.Write("Enter a Number: ");
-                    Console.ForegroundColor = ConsoleColor.Blue;
-                    d = Convert.ToInt32(Console.ReadLine());
-
-                    do
-                    {
-                        prod = d * e;
+                        Console.WriteLine(multi);
                         Console.ForegroundColor = ConsoleColor.Cyan;
-                        Console.WriteLine("{0} * {1} = {2}", d, e, prod);
-                        e++;
+                        Console.Write("Enter a Number: ");
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        d = Convert.ToInt32(Console.ReadLine());
+
+                        do
+                        {
+                            prod = d * e;
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            Console.WriteLine("{0} * {1} = {2}", d, e, prod);
+                            e++;
+                        }
+                        while (e < 11);
                     }
-                    while (e < 11);
-                }
-                else
-                {
-                    Console.Clear();
-                    Console.ForegroundColor = ConsoleColor.Yellow;
-                    string invalid = @"
+                    else
+                    {
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        string invalid = @"
                                                     ______  __    __  __     __   ______   __        ______  _______        
                                                   /      |/  \  /  |/  |   /  | /      \ /  |      /      |/       \       
                                                   $$$$$$/ $$  \ $$ |$$ |   $$ |/$$$$$$  |$$ |      $$$$$$/ $$$$$$$  |      
@@ -475,8 +478,8 @@ namespace ConsoleApplication17
                                             $$ \__$$ |$$ |      $$ |_____ $$ |  $$ |$$ |  $$ |   $$ |  $$ \__$$ |$$ |  $$ |
                                             $$    $$/ $$ |      $$       |$$ |  $$ |$$ |  $$ |   $$ |  $$    $$/ $$ |  $$ |
                                              $$$$$$/  $$/       $$$$$$$$/ $$/   $$/ $$/   $$/    $$/    $$$$$$/  $$/   $$/ ";
-                    Console.WriteLine(invalid);
-                }
+                        Console.WriteLine(invalid);
+                    }
                 }
                 else if (menu == "b" || menu == "B")
                 {
@@ -612,9 +615,9 @@ namespace ConsoleApplication17
                     }
                 }
 
-
-                Console.ReadKey();
-
             }
+            Console.ReadKey();
+
         }
     }
+}
